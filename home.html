@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhagya Restaurants</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('bg3.jpeg') no-repeat center center fixed; /* Set your background image */
+      background-size: cover;
+      color: #fff; /* White text for better contrast */
+    }
+
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh; /* Full screen height */
+      background: rgba(0, 0, 0, 0.6); /* Dark overlay for better readability */
+    }
+
+    header {
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      color: #ffd700; /* Gold color for a premium look */
+    }
+
+    header p {
+      font-size: 1.5em;
+      margin: 10px 0 0;
+      color: #fff;
+    }
+
+    #about, #menu {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      color: white;
+    }
+
+    h2 {
+      text-align: center;
+      
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 1.1em;
+      text-align: left;
+    }
+
+    p:first-letter {
+      font-size: 1.4em;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .menu-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .menu-item {
+      display: flex;
+      align-items: center;
+      flex: 1 1 calc(50% - 15px);
+      background: none;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.05);
+    }
+
+    .menu-item img {
+      width: 100px;
+      height: 100px;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+
+    .menu-item h3 {
+      margin: 0;
+      color: #FFCC00;
+    }
+
+    .menu-item p {
+      color: white;
+    }
+
+    .gallery {
+      text-align: center;
+    }
+
+    .gallery img {
+      width: 200px;
+      margin: 10px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+      border-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Header Section -->
+    <header>
+      <h1>Bhagya Restaurants</h1>
+      <p>Delight in Every Bite</p>
+    </header>
+  </div>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>Welcome to Bhagya Restaurants</h2>
+    <p>At Bhagya Restaurants, we believe in creating memorable dining experiences with a fusion of exquisite flavors, a warm ambiance, and exceptional service. Located in the heart of the city, Bhagya Restaurants offers a fine blend of traditional recipes and modern culinary artistry.</p>
+    <p>Whether you're here for a family gathering, a romantic dinner, or a casual meal with friends, Bhagya Restaurants promises a delightful experience every time.</p>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu">
+    <h2>Our Signature Dishes</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="butter.jpeg" alt="Butter Chicken">
+        <div>
+          <h3>Butter Chicken</h3>
+          <p>A creamy and flavorful Indian dish served with freshly baked naan.</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="paneer.jpeg" alt="Paneer Tikka">
+        <div>
+          <h3>Paneer Tikka</h3>
+          <p>Grilled paneer marinated in aromatic spices and served with mint chutney.</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="sea.jpg" alt="Seafood Platter">
+        <div>
+          <h3>Seafood Platter</h3>
+          <p>A mix of fresh seafood delicacies prepared with our special seasoning.</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="gulab" alt="Gulab Jamun">
+        <div>
+          <h3>Gulab Jamun</h3>
+          <p>Traditional Indian dessert made with milk solids and soaked in syrup.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="res3.jpeg" alt="Restaurant Interior">
+      <img src="dish1.jpeg" alt="Delicious Dish">
+      <img src="res2.jpeg" alt="Restaurant Seating">
+      <img src="dish2.jpeg" alt="Tasty Meal">
+    </div>
+  </section>
+</body>
+</html>

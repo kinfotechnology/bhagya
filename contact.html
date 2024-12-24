@@ -1,0 +1,80 @@
+<!-- Contact Section -->
+<section id="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<style>
+  #contact {
+    background: url('contact-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 40px 0;
+    color: #fff;
+    text-align: center;
+  }
+
+  #contact .container {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+    padding: 30px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  #contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffd700; /* Golden color for the heading */
+  }
+
+  form label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+    color: #ddd;
+  }
+
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+
+  form input:focus, form textarea:focus {
+    border-color: #ffd700; /* Golden border on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.8);
+  }
+
+  form button {
+    background: #ffd700;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  form button:hover {
+    background: #e0c200; /* Darker shade of gold on hover */
+  }
+</style>
